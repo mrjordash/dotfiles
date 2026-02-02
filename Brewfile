@@ -1,30 +1,50 @@
-brew "bat"
-brew "eza"
-brew "fd"
-brew "fish"
-brew "fzf"
-brew "gh"
+# --- Core Infrastructure ---
 brew "git"
-brew "httpie"
-brew "jq"
+brew "stow"
+brew "mas"       # Mac App Store CLI
+brew "gh"        # GitHub CLI
+brew "flyctl"    # Fly.io CLI
+
+# --- CLI QoL ---
 brew "lazydocker"
 brew "lazygit"
-brew "mas"
-brew "mise"
-brew "ripgrep"
-brew "starship"
-brew "stow"
-brew "tldr"
-brew "zoxide"
-cask "1password"
-cask "docker-desktop"
-cask "font-jetbrains-mono-nerd-font"
+
+# --- Shell & Terminal ---
+brew "fish"
+brew "starship"  # Prompt
+brew "zoxide"    # Smarter cd
+brew "bat"       # Better cat
+brew "eza"       # Better ls
+brew "fzf"       # Fuzzy finder
+brew "ripgrep"   # Fast search (rg)
+brew "fd"        # Fast find
+brew "jq"        # JSON processor
+brew "tldr"      # Simplified man pages
+brew "httpie"    # HTTP client
+
+# --- Runtimes (Version Management) ---
+brew "mise"      # Manages Node, Elixir, Java
+
+# --- GUI Apps (Casks) ---
 cask "ghostty"
-cask "raycast"
-cask "rectangle"
-cask "shottr"
+cask "zed"              # Rust-based Editor
 cask "visual-studio-code"
+cask "docker-desktop"
+cask "1password"
+cask "discord"
+#cask "raycast"
+cask "rectangle"        # Window management
+cask "shottr"           # Screenshots
+
+# --- Fonts ---
+cask "font-monaspace"   # Texture Healing (Neon, Argon, etc.)
+cask "font-jetbrains-mono-nerd-font" # Backup/Icons
+
+# --- Mac App Store (Optional) ---
+mas "Xcode", id: 497799835
 mas "1Password for Safari", id: 1569813296
+
+# --- VS Code (Extensions) ---
 vscode "bradlc.vscode-tailwindcss"
 vscode "jakebecker.elixir-ls"
 vscode "phoenixframework.phoenix"
