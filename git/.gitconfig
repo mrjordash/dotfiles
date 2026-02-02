@@ -1,7 +1,7 @@
 [user]
 	name = Jordan Rioux
 	email = jordan.riouxleclair@gmail.com
-	signingkey = /Users/jordy/.ssh/id_ed25519.pub
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIYc/bf14/t+xTs2TJ0x6XxxxWsIaQmD982UxwOl8Y6o
 [init]
 	defaultBranch = main
 [core]
@@ -12,4 +12,4 @@
 [commit]
 	gpgsign = true
 [gpg "ssh"]
-	program = /usr/bin/ssh-keygen
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign

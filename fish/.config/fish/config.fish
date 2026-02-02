@@ -25,3 +25,8 @@ abbr -a .. "cd .."
 abbr -a ... "cd ../.."
 abbr -a ll "eza -l -g --icons" # Long list with icons
 abbr -a la "eza -la -g --icons" # List all (hidden)abbr -a c "cd ~/Code"
+
+
+# 1Password SSH Agent
+# This points SSH to the 1Password socket
+set -gx SSH_AUTH_SOCK "~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"

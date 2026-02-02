@@ -1,6 +1,7 @@
 # 🔐 SSH & GPG Signing Setup
 
-This manual step is required to enable **Git Commit Signing** and **GitHub Authentication**.
+This manual step is required to enable **Git Commit Signing** and **GitHub Authentication** if you do not use **1Password**.
+
 *Since private keys are never stored in this repo, they must be generated fresh on each machine.*
 
 ## 1. Generate a New SSH Key

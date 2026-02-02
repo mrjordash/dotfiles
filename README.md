@@ -52,7 +52,7 @@ _These settings cannot be automated via script and must be done once._
 
 ### 1. Security & Git Signing 🔐
 **Critical:** You must generate new SSH keys and authorize them with GitHub for commit signing to work.
-👉 **[Read the SSH Setup Guide](docs/ssh-setup.md)**
+👉 **[Read the SSH Setup Guide using 1Password](docs/ssh-setup-1password.md)** or **[Read the SSH Setup Guide](docs/ssh-setup.md)**
 
 ### 2. Set Fish as Default Shell
 ```bash
@@ -91,4 +91,10 @@ If you install a new app via brew manually, update the record:
 ```bash
 cd ~/dotfiles
 brew bundle dump --force --file=Brewfile
+```
+
+## macOS System Preferences
+Apply Finder, Dock, and Keyboard settings:
+```bash
+./macos/set-defaults.sh
 ```
