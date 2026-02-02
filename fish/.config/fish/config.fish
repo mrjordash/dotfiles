@@ -24,4 +24,4 @@ abbr -a iexm "iex -S mix"
 abbr -a .. "cd .."
 abbr -a ... "cd ../.."
 abbr -a ll "eza -l -g --icons" # Long list with icons
-abbr -a la "eza -la -g --icons" # List all (hidden)
+abbr -a la "eza -la -g --icons" # List all (hidden)abbr -a c "cd ~/Code"

@@ -1,38 +1,31 @@
-# ~/dotfiles/Brewfile
-
-# Note: "tap homebrew/bundle" and "tap homebrew/cask-fonts" are REMOVED.
-
-# --- Core ---
-brew "git"
-brew "stow"
-brew "mas"
-brew "gh"
-
-# --- Shell ---
-brew "fish"
-brew "starship"
-brew "zoxide"
 brew "bat"
 brew "eza"
-brew "fzf"
-brew "ripgrep"
 brew "fd"
-brew "jq"
-brew "tldr"
+brew "fish"
+brew "fzf"
+brew "gh"
+brew "git"
 brew "httpie"
-brew "lazygit"
+brew "jq"
 brew "lazydocker"
-
-# --- Runtimes ---
+brew "lazygit"
+brew "mas"
 brew "mise"
-
-# --- Apps (Casks) ---
-cask "ghostty"
+brew "ripgrep"
+brew "starship"
+brew "stow"
+brew "tldr"
+brew "zoxide"
+cask "1password"
 cask "docker-desktop"
-cask "visual-studio-code"
+cask "font-jetbrains-mono-nerd-font"
+cask "ghostty"
+cask "raycast"
 cask "rectangle"
 cask "shottr"
-# cask "raycast" # Uncomment if you want Raycast
-
-# --- Fonts (Now treated as standard Casks) ---
-cask "font-jetbrains-mono-nerd-font"
+cask "visual-studio-code"
+mas "1Password for Safari", id: 1569813296
+vscode "bradlc.vscode-tailwindcss"
+vscode "jakebecker.elixir-ls"
+vscode "phoenixframework.phoenix"
+vscode "usernamehw.errorlens"

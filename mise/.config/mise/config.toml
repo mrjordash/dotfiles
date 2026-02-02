@@ -1,0 +1,14 @@
+[tools]
+
+# The "LTS" (Long Term Support) is best for stability
+node = "lts" 
+
+# For your Elixir/Phoenix work
+erlang = "latest"
+elixir = "latest"
+
+# For your Java/C# classes
+java = "latest"
+
+# dotnet is usually managed by homebrew-cask, but mise can do it too. 
+# We'll stick to Brew for dotnet SDK as it integrates better with macOS.
