@@ -1,8 +1,15 @@
 [user]
 	name = Jordan Rioux
 	email = jordan.riouxleclair@gmail.com
+	signingkey = /Users/jordy/.ssh/id_ed25519.pub
 [init]
 	defaultBranch = main
 [core]
 	editor = code --wait
 	excludesfile = /Users/jordy/.gitignore_global
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
+[gpg "ssh"]
+	program = /usr/bin/ssh-keygen

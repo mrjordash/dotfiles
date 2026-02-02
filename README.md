@@ -50,16 +50,19 @@ mise install
 
 _These settings cannot be automated via script and must be done once._
 
-## 1. Set Fish as Default Shell
-The system needs permission to use the Homebrew version of Fish.
+### 1. Security & Git Signing 🔐
+**Critical:** You must generate new SSH keys and authorize them with GitHub for commit signing to work.
+👉 **[Read the SSH Setup Guide](docs/ssh-setup.md)**
 
+### 2. Set Fish as Default Shell
 ```bash
 echo /opt/homebrew/bin/fish | sudo tee -a /etc/shells
 chsh -s /opt/homebrew/bin/fish
 ```
+
 _Action: Restart your terminal after this step._
 
-## 2. Install Fisher (Plugin Manager)
+## 3. Install Fisher (Plugin Manager)
 
 Fisher is self-bootstrapping and manages Fish plugins.
 
@@ -67,11 +70,10 @@ Fisher is self-bootstrapping and manages Fish plugins.
 curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
 ```
 
-## 3. Authenticate CLI tools
+## 4. Authenticate CLI tools
 
 * __Github:__ Run `gh auth login`
 * __VS Code:__ Open app and enable "Settings Sync".
-
 
 # 📝 Maintenance / How-To
 
