@@ -1,0 +1,7 @@
+[user]
+	name = Jordan Rioux
+	email = jordan.riouxleclair@gmail.com
+[init]
+	defaultBranch = main
+[core]
+	editor = code --wait
