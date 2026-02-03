@@ -1,11 +1,12 @@
-starship init fish | source
-mise activate fish | source
-
 # Claude Code Configuration
 export CLAUDE_CODE_THEME="dark"
 export CLAUDE_NO_GREETING="true" # Skip the "Welcome to Claude Code" banner
 
 if status is-interactive
+    starship init fish | source
+    mise activate fish | source
+    zoxide init fish | source
+
     fastfetch
 end
 
