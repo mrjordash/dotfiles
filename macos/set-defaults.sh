@@ -1,8 +1,6 @@
 #!/bin/bash
 
-# ~/.dotfiles/docs/macos-setup.sh
 # Run this script once on a fresh Mac to configure system preferences.
-
 echo "   🔧 Applying macOS defaults..."
 
 # Close System Settings to prevent overriding
