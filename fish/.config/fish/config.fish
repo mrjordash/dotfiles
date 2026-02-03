@@ -13,9 +13,6 @@ end
 alias ls="eza --icons --git -a"
 alias cat="bat"
 
-# Run Claude without the "Can I run ls?" fatigue
-alias c="claude --dangerously-skip-permissions"
-
 # QOL
 abbr reload "source ~/.config/fish/config.fish"
 
@@ -43,6 +40,12 @@ abbr -a .. "cd .."
 abbr -a ... "cd ../.."
 abbr -a ll "eza -l -g --icons" # Long list with icons
 abbr -a la "eza -la -g --icons" # List all (hidden)abbr -a c "cd ~/Code"
+
+# Claude Code Shortcuts
+# -y = auto-confirm read-only actions (yolo mode)
+# -p = print output directly to stdout (good for piping)
+abbr c "claude"
+abbr cy "claude --dangerously-skip-permissions"
 
 # 1Password SSH Agent
 # This points SSH to the 1Password socket
