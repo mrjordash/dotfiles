@@ -13,6 +13,10 @@ Managed via `stow`, `homebrew`, and `mise`.
     ```bash
     git clone https://github.com/jordanrioux/dotfiles.git ~/dotfiles
     ```
+3.  **Install your apps:**
+    ```bash
+    brew bundle --file ~/dotfiles/Brewfile
+    ```
 
 ## ⚡️ Quick Start
 I have automated the setup process. Run the installer to:
