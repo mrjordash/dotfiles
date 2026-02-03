@@ -1,9 +1,22 @@
 # ~/dotfiles/starship/.config/starship.toml
 
-# Use Catppuccin Mocha Palette
+# --- Global Settings ---
+add_newline = true
 palette = "catppuccin_mocha"
 
+# --- The Layout (Minimalist) ---
+format = """
+$directory\
+$git_branch\
+$git_status\
+$line_break\
+$character"""
+
+right_format = """$cmd_duration"""
+
+# --- Palette (No changes needed) ---
 [palettes.catppuccin_mocha]
+# ... (keep your existing colors) ...
 rosewater = "#f5e0dc"
 flamingo = "#f2cdcd"
 pink = "#f5c2e7"
@@ -20,46 +33,45 @@ blue = "#89b4fa"
 lavender = "#b4befe"
 text = "#cdd6f4"
 subtext1 = "#bac2de"
-subtext0 = "#a6adc8"
-overlay2 = "#9399b2"
-overlay1 = "#7f849c"
-overlay0 = "#6c7086"
-surface2 = "#585b70"
-surface1 = "#45475a"
-surface0 = "#313244"
 base = "#1e1e2e"
-mantle = "#181825"
-crust = "#11111b"
 
-# --- Modules ---
-
-[character]
-success_symbol = "[➜](bold green)"
-error_symbol = "[✗](bold red)"
+# --- Module Configuration ---
 
 [directory]
-style = "blue"
+style = "bold blue"
 truncation_length = 3
 truncate_to_repo = false
+read_only = " 🔒"
 
 [git_branch]
 symbol = " "
-style = "mauve"
+style = "bold yellow"
 
 [git_status]
-style = "mauve"
+style = "bold yellow"
+conflicted = "🏳"
+up_to_date = ""
+untracked = " "
+modified = " "
+staged = " "
 
-[nodejs]
-symbol = " "
-style = "green"
+# --- The Cursor ---
+[line_break]
+disabled = false
 
-[elixir]
-symbol = " "
-style = "purple"
+[character]
+success_symbol = "[❯](bold green)"
+error_symbol = "[❯](bold red)"
+vimcmd_symbol = "[❮](bold green)"
 
-[docker_context]
-symbol = " "
-style = "blue"
-
+# --- Disable everything else just in case ---
 [package]
-disabled = true # Reduces clutter
+disabled = true
+[nodejs]
+disabled = true
+[elixir]
+disabled = true
+[java]
+disabled = true
+[docker_context]
+disabled = true
