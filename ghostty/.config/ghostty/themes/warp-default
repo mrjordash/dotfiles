@@ -1,0 +1,39 @@
+# Warp Default (Mimic) for Ghostty
+background = #0a0e14
+foreground = #a9b1d6
+selection-background = #2e3c64
+selection-foreground = #ffffff
+cursor-color = #00aaff
+cursor-text = #0a0e14
+
+# Black (Deep Background elements)
+palette = 0=#11151c
+palette = 8=#3a4455
+
+# Red (Errors)
+palette = 1=#f7768e
+palette = 9=#ff7a93
+
+# Green (Success)
+palette = 2=#9ece6a
+palette = 10=#b9f27c
+
+# Yellow (Warnings)
+palette = 3=#e0af68
+palette = 11=#ff9e64
+
+# Blue (Folders/Info)
+palette = 4=#7aa2f7
+palette = 12=#7da6ff
+
+# Purple (Keywords)
+palette = 5=#bb9af7
+palette = 13=#bb9af7
+
+# Cyan (Links)
+palette = 6=#7dcfff
+palette = 14=#0db9d7
+
+# White (Text)
+palette = 7=#a9b1d6
+palette = 15=#dbdfef

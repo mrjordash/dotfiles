@@ -1,7 +1,7 @@
 # ~/dotfiles/ghostty/.config/ghostty/config
 
 # --- Fonts ---
-# Monaspace Neon is the "Cyberpunk/Code" variant. 
+# Monaspace Neon is the "Cyberpunk/Code" variant.
 # Try "Monaspace Argon" if you prefer a wider, more rounded look.
 font-family = "Monaspace Neon"
 font-size = 14
