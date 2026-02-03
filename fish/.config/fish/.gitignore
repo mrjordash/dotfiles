@@ -1,0 +1,9 @@
+# Ignore machine-specific state
+fish_variables
+fish_history
+generated_completions/
+
+# Ignore plugin manager noise (optional, but cleaner)
+# If you use 'fisher', you usually only want to track the 'fish_plugins' file, not the actual code it downloads.
+functions/fisher.fish
+conf.d/plugin-*.fish
