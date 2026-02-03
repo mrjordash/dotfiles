@@ -33,6 +33,34 @@ I have automated the setup process. Run the installer to:
 
 Some things cannot be automated. See `docs/` for details:
 
-* [SSH & Git Signing Setup with 1Password](docs/ssh-setup-1password.md)
-* Or [SSH & Git Signing Setup](docs/ssh-setup.md)
-* __Logins__: VS Code Sync, 1Password, Claude App.
+## ⚠️ Manual Post-Install Steps
+
+While the `install.sh` handles 90% of the setup, these steps require human intervention or sudo permissions that cannot be scripted.
+
+### 1. System & Security
+- [SSH & Git Signing Setup with 1Password](docs/ssh-setup-1password.md)
+    - Or [SSH & Git Signing Setup](docs/ssh-setup.md)
+- **Sudo via TouchID:**
+  - Edit the sudo config: `TERM=xterm-256color sudo nano /etc/pam.d/sudo`
+  - Add `auth sufficient pam_tid.so` to the very top (Line 1).
+  - *Note: This resets on major macOS updates.*
+- **Ghostty Terminfo:**
+  - Fix "unknown terminal" errors in root: `infocmp -x | sudo tic -x -`
+- **Safari:**
+  - Disable "Check spelling while typing" via `Edit > Spelling and Grammar` in the Menu Bar (cannot be disabled via Settings).
+
+### 2. Application Permissions
+- **Rectangle:** Grant "Accessibility" permission when prompted.
+- **Shottr:** Grant "Screen Recording" permission (for pixel access).
+- **OrbStack:**
+  - Open App -> Accept Terms.
+  - If migrating: Select "Import data from Docker Desktop".
+
+### 3. AI & Secrets
+- **Claude Code:**
+  - Login: `claude login`
+  - *Note:* The configuration is symlinked from `~/dotfiles/claude/.claude`, but the `.gitignore` inside that folder prevents session keys from being pushed.
+
+### 4. Fish Shell
+- **Reload Config:** `source ~/.config/fish/config.fish` (or `reload`)
+- **Fisher Plugins:** Ensure plugins are installed: `fisher update`
