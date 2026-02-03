@@ -40,7 +40,8 @@ for package in "${PACKAGES[@]}"; do
     stow -R "$package"
 done
 
-echo "✅ Done! All config files are linked."
+echo "   ✅ Done! All config files are linked."
+echo
 
 # Install Mise tools (Node, etc.)
 if command -v mise &> /dev/null; then
@@ -49,6 +50,7 @@ if command -v mise &> /dev/null; then
 else
     echo "⚠️ Mise not found. Skipping tool installation."
 fi
+echo
 
 # 5. Fish Plugin Setup
 echo "🐟 Setting up Fish shell..."
@@ -59,14 +61,15 @@ if ! grep -q "fisher" ~/.config/fish/functions/fisher.fish 2>/dev/null; then
 else
     echo "   → Fisher is already installed."
 fi
+echo
 
 # Optional: Run macOS setup
 read -p "🍎 Do you want to apply macOS system defaults now? (y/n) " -n 1 -r
 echo
 if [[ $REPLY =~ ^[Yy]$ ]]; then
-    echo "🔧 Applying macOS defaults..."
     ./macos/set-defaults.sh
 fi
+echo
 
 echo "🎉 Setup complete!"
 echo "   Restart your terminal to see changes."

@@ -3,7 +3,7 @@
 # ~/.dotfiles/docs/macos-setup.sh
 # Run this script once on a fresh Mac to configure system preferences.
 
-echo "Applying macOS Developer Defaults..."
+echo "   🔧 Applying macOS defaults..."
 
 # --- Finder ---
 # Show all filename extensions (file.txt vs file)
@@ -44,8 +44,8 @@ defaults write com.apple.screencapture location -string "${HOME}/Desktop"
 defaults write com.apple.screencapture disable-shadow -bool true
 
 # --- Restart UI ---
-echo "Restarting Finder and Dock to apply changes..."
+echo "   Restarting Finder and Dock to apply changes..."
 killall Finder
 killall Dock
 
-echo "✅ Done. Note: You may need to restart your Mac for keyboard changes to fully take effect."
+echo "   ✅ Done. Note: You may need to restart your Mac for keyboard changes to fully take effect."
