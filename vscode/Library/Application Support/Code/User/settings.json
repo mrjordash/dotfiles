@@ -18,5 +18,6 @@
   // --- Formatter & Quality of Life ---
   "editor.formatOnSave": true,
   "files.trimTrailingWhitespace": true,
-  "explorer.confirmDragAndDrop": false
+  "explorer.confirmDragAndDrop": false,
+  "git.confirmSync": false
 }
