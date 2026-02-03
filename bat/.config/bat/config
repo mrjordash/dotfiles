@@ -1,0 +1,10 @@
+# ~/dotfiles/bat/.config/bat/config
+
+# Set the theme to "Dracula" (Matches Catppuccin well)
+--theme="Dracula"
+
+# Remove the grid/table lines (Cleaner look)
+#--style="plain"
+
+# Always use colors
+--color="always"
