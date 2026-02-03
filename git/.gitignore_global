@@ -1,5 +1,59 @@
+# --- OS & System Noise (macOS/Linux) ---
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# --- Editors & IDEs (Don't force your settings on the team) ---
+# VS Code
 .vscode/
+!.vscode/settings.json # Optional: keep if you share team settings
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# JetBrains (IntelliJ, Rider, RubyMine)
+.idea/
+*.iml
+
+# Zed & Vim
+.zed/
+*.swp
+*.swo
+
+# --- Security (The "Save Your Job" Section) ---
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+*.cert
+id_rsa
+id_dsa
+secrets.json
+aws_credentials
+
+# --- Build & Dependency Safety Nets ---
+# (Ideally these are in project ignores, but this catches them if you forget)
+node_modules/
+npm-debug.log*
+yarn-error.log
+# Contentious: usually you commit this, but un-comment if you hate it. KEEP COMMITTED usually.
+package-lock.json
+
+# Elixir / Phoenix
+.elixir_ls/
+deps/
+_build/
+cover/
+erl_crash.dump
+
+# Misc
 dist/
 build/
-.env
+out/
+*.log
+.claude/
