@@ -12,6 +12,13 @@
     },
     "modules": [
         "break",
+        "break",
+        "break",
+        "break",
+        "break",
+        "break",
+        "break",
+        "break",
         {
             "type": "os",
             "key": "OS   ",
@@ -23,26 +30,6 @@
             "keyColor": "blue"
         },
         {
-            "type": "kernel",
-            "key": "Ker  ",
-            "keyColor": "blue"
-        },
-        {
-            "type": "uptime",
-            "key": "Up   ",
-            "keyColor": "blue"
-        },
-        {
-            "type": "shell",
-            "key": "Sh   ",
-            "keyColor": "magenta"
-        },
-        {
-            "type": "terminal",
-            "key": "Term ",
-            "keyColor": "magenta"
-        },
-        {
             "type": "cpu",
             "key": "CPU  ",
             "keyColor": "green"
@@ -50,6 +37,11 @@
         {
             "type": "memory",
             "key": "RAM  ",
+            "keyColor": "green"
+        },
+        {
+            "type": "disk",
+            "key": "Disk ",
             "keyColor": "green"
         },
         "break",
