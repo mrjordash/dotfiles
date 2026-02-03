@@ -5,6 +5,10 @@ if status is-interactive
     fastfetch
 end
 
+# Remap standard commands
+alias ls="eza --icons --git -a"
+alias cat="bat"
+
 # Git
 abbr -a g git
 abbr -a gs "git status"
@@ -34,3 +38,6 @@ abbr -a la "eza -la -g --icons" # List all (hidden)abbr -a c "cd ~/Code"
 # 1Password SSH Agent
 # This points SSH to the 1Password socket
 set -gx SSH_AUTH_SOCK "~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
+# Added by OrbStack: command-line tools and integration
+# This won't be added again if you remove it.
+source ~/.orbstack/shell/init2.fish 2>/dev/null || :

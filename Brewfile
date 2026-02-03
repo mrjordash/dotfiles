@@ -28,14 +28,23 @@ brew "mise"      # Manages Node, Elixir, Java
 
 # --- GUI Apps (Casks) ---
 cask "ghostty"
-cask "zed"              # Rust-based Editor
-cask "visual-studio-code"
-cask "docker-desktop"
 cask "1password"
 cask "discord"
-#cask "raycast"
+
+# Editor
+cask "zed"              # Rust-based Editor
+cask "visual-studio-code"
+
+# Utilities
 cask "rectangle"        # Window management
 cask "shottr"           # Screenshots
+#cask "raycast"
+
+# Infrastructure
+cask "orbstack"          # The lightweight Docker replacement
+cask "tableplus"         # Native, fast DB client
+cask "bruno"             # API Client that lives in your Git repo
+#cask "docker-desktop"
 
 # Browsers
 cask "arc"
