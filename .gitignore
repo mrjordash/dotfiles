@@ -6,6 +6,46 @@ zed/.config/zed/conversations/
 # If we create AI slash commands, we might want to include them in the repo
 zed/.config/zed/prompts/
 
+
+# --- Global OS Noise ---
+.DS_Store
+.Trashes
+._*
+
+# --- The "Nuclear" Safety Net (Secrets) ---
+# Prevent accidentally committing keys even if you move them here
+**/.env
+**/.env.*
+**/*.pem
+**/*.key
+**/*.p12
+**/*.cer
+**/id_rsa
+**/id_ed25519
+**/gh_token
+
+# --- Shell History & State (Never commit these) ---
+# If you accidentally stow a folder with history, this saves you
+**/*_history
+**/.lesshst
+**/fish_history
+**/zsh_history
+**/bash_history
+**/fish_variables
+
+# --- Application Cache/Databases ---
+# Just in case you stow a folder that contains binary blobs
+**/*.db
+**/*.sqlite
+**/*.log
+**/node_modules/
+**/__pycache__/
+
+# --- SSH Specifics ---
+# If you stow your .ssh folder, ONLY track the config
+ssh/known_hosts
+ssh/authorized_keys
+
 # Created by https://www.toptal.com/developers/gitignore/api/macos
 # Edit at https://www.toptal.com/developers/gitignore?templates=macos
 
