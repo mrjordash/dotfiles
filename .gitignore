@@ -2,7 +2,7 @@
 zed/.config/zed/db/
 zed/.config/zed/*.lock
 zed/.config/zed/conversations/
-zed/.config/zed/prompts/
+zed/.config/zed/prompts/    # If we create AI slash commands, we might want to include them in the repo
 
 # Created by https://www.toptal.com/developers/gitignore/api/macos
 # Edit at https://www.toptal.com/developers/gitignore?templates=macos
