@@ -1,7 +1,7 @@
 [tools]
 
 # The "LTS" (Long Term Support) is best for stability
-node = "lts" 
+node = "lts"
 
 # For your Elixir/Phoenix work
 erlang = "latest"

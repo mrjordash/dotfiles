@@ -1,0 +1,29 @@
+# ~/dotfiles/ghostty/.config/ghostty/config
+
+# --- Fonts ---
+# Monaspace Neon is the "Cyberpunk/Code" variant. 
+# Try "Monaspace Argon" if you prefer a wider, more rounded look.
+font-family = "Monaspace Neon"
+font-size = 14
+
+# Enable ligatures (Standard)
+font-feature = calt, liga
+
+# --- Theme ---
+# Ghostty has this built-in!
+theme = catppuccin-mocha
+
+# --- Window ---
+# Clean, modern look with tabs in the titlebar
+macos-titlebar-style = tabs
+window-decoration = true
+window-padding-x = 12
+window-padding-y = 12
+
+# --- Shell ---
+# Ensure it loads Fish
+command = /opt/homebrew/bin/fish
+
+# --- Keybindings (Optional) ---
+# Quickly reload config with Cmd+Shift+R
+keybind = cmd+shift+r=reload_config
