@@ -1,0 +1,26 @@
+{
+  // --- Visuals (Match Ghostty/Zed) ---
+  "workbench.colorTheme": "Catppuccin Mocha",
+  "workbench.iconTheme": "catppuccin-mocha",
+  
+  // --- Typography (Monaspace Neon) ---
+  "editor.fontFamily": "Monaspace Neon, 'Monaspace Argon', monospace",
+  "editor.fontSize": 14,
+  "editor.fontLigatures": "'calt', 'liga', 'ss01', 'ss02'", // Enables specific Monaspace traits
+  "editor.lineHeight": 1.6,
+
+  // --- Clean UI (Educator Mode) ---
+  "editor.minimap.enabled": false,       // Less clutter
+  "editor.renderWhitespace": "selection",
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorSmoothCaretAnimation": "on",
+  
+  // --- Terminal ---
+  "terminal.integrated.fontFamily": "Monaspace Neon",
+  "terminal.integrated.fontSize": 14,
+  
+  // --- Formatter & Quality of Life ---
+  "editor.formatOnSave": true,
+  "files.trimTrailingWhitespace": true,
+  "explorer.confirmDragAndDrop": false
+}
