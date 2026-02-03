@@ -28,6 +28,7 @@ PACKAGES=(
     "vscode"
     "starship"
     "bat"
+    "fastfetch"
     "mise"
 )
 
