@@ -1,0 +1,26 @@
+{
+    "theme": "dark",
+    "ignorePatterns": [
+        "**/.git/**",
+        "**/.DS_Store",
+        "**/.env",
+        "**/.env.*",
+        "**/_build/**",
+        "**/deps/**",
+        "**/mix.lock",
+        "**/.elixir_ls/**",
+        "**/node_modules/**",
+        "**/dist/**",
+        "**/coverage/**",
+        "**/package-lock.json",
+        "**/yarn.lock",
+        "**/pnpm-lock.yaml",
+        "**/vendor/**",
+        "**/composer.lock",
+        "**/storage/framework/**",
+        "**/.phpunit.cache/**",
+        "**/vendor/**",
+        "**/go.sum",
+        "**/bin/**"
+    ]
+}

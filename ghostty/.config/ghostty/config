@@ -19,6 +19,7 @@ macos-titlebar-style = tabs
 window-decoration = true
 window-padding-x = 12
 window-padding-y = 12
+macos-titlebar-proxy-icon = hidden
 
 # --- Shell ---
 # Ensure it loads Fish
@@ -27,3 +28,9 @@ command = /opt/homebrew/bin/fish
 # --- Keybindings (Optional) ---
 # Quickly reload config with Cmd+Shift+R
 keybind = cmd+shift+r=reload_config
+
+# --- Visuals ---
+# value between 0 (transparent) and 1 (opaque)
+background-opacity = 0.9
+# "true" enables the frost/blur effect (macOS only)
+background-blur-radius = 20

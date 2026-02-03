@@ -29,6 +29,7 @@ PACKAGES=(
     "starship"
     "bat"
     "fastfetch"
+    "claude"
     "mise"
 )
 
