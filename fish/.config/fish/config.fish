@@ -1,6 +1,10 @@
 starship init fish | source
 mise activate fish | source
 
+if status is-interactive
+    fastfetch
+end
+
 # Git
 abbr -a g git
 abbr -a gs "git status"

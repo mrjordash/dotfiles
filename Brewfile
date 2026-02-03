@@ -10,6 +10,7 @@ brew "lazydocker"
 brew "lazygit"
 
 # --- Shell & Terminal ---
+brew "fastfetch"
 brew "fish"
 brew "starship"  # Prompt
 brew "zoxide"    # Smarter cd
@@ -35,6 +36,18 @@ cask "discord"
 #cask "raycast"
 cask "rectangle"        # Window management
 cask "shottr"           # Screenshots
+
+# Browsers
+cask "arc"
+cask "brave-browser"
+
+# Knowledge & AI
+cask "obsidian"
+cask "claude"
+
+# Productivity (Microsoft 365)
+cask "microsoft-office" # Installs Word, Excel, PowerPoint, Outlook, OneNote
+cask "microsoft-teams"
 
 # --- Fonts ---
 cask "font-monaspace"   # Texture Healing (Neon, Argon, etc.)
