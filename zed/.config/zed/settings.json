@@ -8,6 +8,10 @@
     "calt": true,
     "liga": true,
   },
+  // FALLBACK FONT (For Icons  )
+  "buffer_font_fallbacks": [
+    "JetBrainsMono Nerd Font"
+  ],
   "terminal": {
     "font_family": "Monaspace Neon",
     "font_features": {
