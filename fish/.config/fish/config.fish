@@ -40,7 +40,8 @@ abbr -a iexm "iex -S mix"
 abbr -a .. "cd .."
 abbr -a ... "cd ../.."
 abbr -a ll "eza -l -g --icons" # Long list with icons
-abbr -a la "eza -la -g --icons" # List all (hidden)abbr -a c "cd ~/Code"
+abbr -a la "eza -la -g --icons" # List all (hidden)
+abbr -a cc "cd ~/Code"
 
 # Claude Code Shortcuts
 # -y = auto-confirm read-only actions (yolo mode)
@@ -50,8 +51,8 @@ abbr cy "claude --dangerously-skip-permissions"
 
 # 1Password SSH Agent
 # This points SSH to the 1Password socket
-set -gx SSH_AUTH_SOCK "~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
+set -gx SSH_AUTH_SOCK "$HOME/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
 # Added by OrbStack: command-line tools and integration
 # This won't be added again if you remove it.
 source ~/.orbstack/shell/init2.fish 2>/dev/null || :
-export PATH="$HOME/.local/bin:$PATH"
+fish_add_path -g "$HOME/.local/bin"

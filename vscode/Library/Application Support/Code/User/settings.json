@@ -19,5 +19,6 @@
   "editor.formatOnSave": true,
   "files.trimTrailingWhitespace": true,
   "explorer.confirmDragAndDrop": false,
-  "git.confirmSync": false
+  "git.confirmSync": false,
+  "claudeCode.preferredLocation": "panel"
 }

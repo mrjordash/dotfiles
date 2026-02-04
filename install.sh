@@ -35,7 +35,8 @@ PACKAGES=(
 
 # 4. Run Stow
 echo "🔗 Linking configuration files..."
-cd "$HOME/dotfiles" || exit
+DOTFILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+cd "$DOTFILES_DIR" || exit
 
 for package in "${PACKAGES[@]}"; do
     echo "   → Stowing $package"
