@@ -8,6 +8,13 @@ brew "flyctl"    # Fly.io CLI
 # --- CLI QoL ---
 brew "lazydocker"
 brew "lazygit"
+brew "git-delta"  # Better git diffs
+brew "direnv"     # Per-project env vars
+brew "tree"       # Directory visualization
+brew "dust"       # Better du (disk usage)
+brew "btop"       # System monitor
+brew "trash"      # Safe rm (moves to trash)
+brew "yq"         # jq for YAML
 
 # --- Shell & Terminal ---
 brew "fastfetch"

@@ -6,6 +6,7 @@ if status is-interactive
     starship init fish | source
     mise activate fish | source
     zoxide init fish | source
+    direnv hook fish | source
 
     fastfetch
 end

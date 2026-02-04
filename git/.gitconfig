@@ -7,9 +7,27 @@
 [core]
 	editor = code --wait
 	excludesfile = ~/.gitignore_global
+	pager = delta
 [gpg]
 	format = ssh
 [commit]
 	gpgsign = true
 [gpg "ssh"]
 	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+[interactive]
+	diffFilter = delta --color-only
+[delta]
+	navigate = true
+	line-numbers = true
+	syntax-theme = Dracula
+[merge]
+	conflictstyle = diff3
+[diff]
+	colorMoved = default
+[alias]
+	co = checkout
+	br = branch
+	st = status -sb
+	unstage = reset HEAD --
+	last = log -1 HEAD
+	graph = log --oneline --graph --decorate -20
