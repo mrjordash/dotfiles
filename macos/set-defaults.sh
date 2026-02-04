@@ -39,10 +39,14 @@ defaults write com.apple.dock tilesize -int 56
 # Don't show recent applications in Dock
 defaults write com.apple.dock show-recents -bool false
 
+# Remove workspace auto-switching
+defaults write com.apple.dock workspaces-auto-swoosh -bool NO
+
 # --- KEYBOARD & INPUT ---
 # Fast Key Repeat (Speed up navigation)
 defaults write NSGlobalDomain KeyRepeat -int 1
 defaults write NSGlobalDomain InitialKeyRepeat -int 10
+defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
 # Disable "Smart Quotes" and "Smart Dashes" (Prevents syntax errors)
 defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
