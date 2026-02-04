@@ -36,6 +36,12 @@ abbr -a m mix
 abbr -a mps "mix phx.server"
 abbr -a iexm "iex -S mix"
 
+# Go
+abbr -a gr "go run ."
+abbr -a gb "go build"
+abbr -a gt "go test ./..."
+abbr -a gmt "go mod tidy"
+
 # Navigation
 abbr -a .. "cd .."
 abbr -a ... "cd ../.."
@@ -56,3 +62,4 @@ set -gx SSH_AUTH_SOCK "$HOME/Library/Group Containers/2BUA8C4S2C.com.1password/t
 # This won't be added again if you remove it.
 source ~/.orbstack/shell/init2.fish 2>/dev/null || :
 fish_add_path -g "$HOME/.local/bin"
+fish_add_path -g "$HOME/go/bin" # Go binaries (gopls, etc.)

@@ -10,5 +10,8 @@ elixir = "latest"
 # For your Java/C# classes
 java = "latest"
 
+# Go
+go = "latest"
+
 # dotnet is usually managed by homebrew-cask, but mise can do it too. 
 # We'll stick to Brew for dotnet SDK as it integrates better with macOS.

@@ -51,6 +51,16 @@ _build/
 cover/
 erl_crash.dump
 
+# Go
+vendor/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
 # Misc
 dist/
 build/
