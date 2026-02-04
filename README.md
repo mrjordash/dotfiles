@@ -1,66 +1,79 @@
-# 🚀 Dotfiles
+# Dotfiles
 
 My personal configuration for macOS. A reproducible development environment featuring **Fish**, **Ghostty**, **Zed**, and **Catppuccin** themes.
 
 Managed via `stow`, `homebrew`, and `mise`.
 
-## 🛠 Prerequisites
-1.  **Install Homebrew:**
-    ```bash
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-    ```
-2.  **Clone this repo:**
-    ```bash
-    git clone https://github.com/jordanrioux/dotfiles.git ~/dotfiles
-    ```
-3.  **Install your apps:**
-    ```bash
-    brew bundle --file ~/dotfiles/Brewfile
-    ```
+## Prerequisites
 
-## ⚡️ Quick Start
-I have automated the setup process. Run the installer to:
-1.  Link all configuration files (Stow).
-2.  Install Fish plugins (Fisher).
-3.  Install development runtimes (Node.js LTS, etc.).
-4.  (Optional) Apply macOS system defaults.
+**Install Homebrew** (this also installs Xcode Command Line Tools, which includes `git`):
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+## Installation
+
+### 1. Clone this repo
+
+```bash
+git clone https://github.com/jordanrioux/dotfiles.git ~/dotfiles
+```
+
+### 2. Install apps and tools
+
+```bash
+brew bundle --file ~/dotfiles/Brewfile
+```
+
+### 3. Run the installer
+
+This will link all config files, install Fish plugins, and set up development runtimes:
 
 ```bash
 ~/dotfiles/install.sh
 ```
 
-# 🔐 Post-Install (Manual)
+## Post-Install (Manual Steps)
 
-Some things cannot be automated. See `docs/` for details:
+Some things require human intervention or cannot be scripted.
 
-## ⚠️ Manual Post-Install Steps
+### System & Security
 
-While the `install.sh` handles 90% of the setup, these steps require human intervention or sudo permissions that cannot be scripted.
-
-### 1. System & Security
-- [SSH & Git Signing Setup with 1Password](docs/ssh-setup-1password.md)
-    - Or [SSH & Git Signing Setup](docs/ssh-setup.md)
+- **SSH & Git Signing:** Choose one:
+  - [Setup with 1Password](docs/ssh-setup-1password.md) (recommended)
+  - [Setup without 1Password](docs/ssh-setup.md)
 - **Sudo via TouchID:**
-  - Edit the sudo config: `TERM=xterm-256color sudo nano /etc/pam.d/sudo`
-  - Add `auth sufficient pam_tid.so` to the very top (Line 1).
-  - *Note: This resets on major macOS updates.*
-- **Ghostty Terminfo:**
-  - Fix "unknown terminal" errors in root: `infocmp -x | sudo tic -x -`
-- **Safari:**
-  - Disable "Check spelling while typing" via `Edit > Spelling and Grammar` in the Menu Bar (cannot be disabled via Settings).
+  ```bash
+  sudo nano /etc/pam.d/sudo_local
+  ```
+  Add this line:
+  ```
+  auth sufficient pam_tid.so
+  ```
+  *(Note: This file persists across macOS updates, unlike `/etc/pam.d/sudo`)*
+- **Ghostty Terminfo** (fixes "unknown terminal" errors):
+  ```bash
+  infocmp -x | sudo tic -x -
+  ```
 
-### 2. Application Permissions
-- **Rectangle:** Grant "Accessibility" permission when prompted.
-- **Shottr:** Grant "Screen Recording" permission (for pixel access).
-- **OrbStack:**
-  - Open App -> Accept Terms.
-  - If migrating: Select "Import data from Docker Desktop".
+### Application Permissions
 
-### 3. AI & Secrets
-- **Claude Code:**
-  - Login: `claude login`
-  - *Note:* The configuration is symlinked from `~/dotfiles/claude/.claude`, but the `.gitignore` inside that folder prevents session keys from being pushed.
+- **Rectangle:** Grant "Accessibility" permission when prompted
+- **Shottr:** Grant "Screen Recording" permission
+- **OrbStack:** Open app, accept terms. If migrating, select "Import data from Docker Desktop"
 
-### 4. Fish Shell
-- **Reload Config:** `source ~/.config/fish/config.fish` (or `reload`)
-- **Fisher Plugins:** Ensure plugins are installed: `fisher update`
+### Development Tools
+
+- **Go:** Install language server and linter - see [Go Setup](docs/go-setup.md)
+- **Claude Code:** Login with `claude login`
+
+### Fish Shell
+
+Reload config after installation:
+
+```bash
+source ~/.config/fish/config.fish
+```
+
+Or use the `reload` abbreviation.
