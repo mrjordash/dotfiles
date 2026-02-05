@@ -20,5 +20,6 @@
   "files.trimTrailingWhitespace": true,
   "explorer.confirmDragAndDrop": false,
   "git.confirmSync": false,
-  "claudeCode.preferredLocation": "panel"
+  "claudeCode.preferredLocation": "panel",
+  "git.autofetch": true
 }
