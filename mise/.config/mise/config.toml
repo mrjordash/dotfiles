@@ -3,6 +3,9 @@
 # The "LTS" (Long Term Support) is best for stability
 node = "lts"
 
+# Bun - fast JavaScript runtime and package manager
+bun = "latest"
+
 # For your Elixir/Phoenix work
 erlang = "latest"
 elixir = "latest"
