@@ -46,6 +46,18 @@ done
 echo "   ✅ Done! All config files are linked."
 echo
 
+# Configure Claude Code MCP servers
+echo "🤖 Configuring Claude Code MCP servers..."
+if command -v claude &> /dev/null; then
+    claude mcp add context7 --scope user -- npx -y @upstash/context7-mcp
+    claude mcp add playwright --scope user -- npx -y @playwright/mcp
+    claude mcp add sequential-thinking --scope user -- npx -y @modelcontextprotocol/server-sequential-thinking
+    echo "   ✅ MCP servers configured"
+else
+    echo "   ⚠️ Claude CLI not found. Skipping MCP server configuration."
+fi
+echo
+
 # Install Mise tools (Node, etc.)
 if command -v mise &> /dev/null; then
     echo "📦 Installing development tools via Mise..."

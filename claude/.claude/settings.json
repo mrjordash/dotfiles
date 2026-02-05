@@ -1,4 +1,32 @@
 {
+    "permissions": {
+        "allow": [
+            "Edit(*)",
+            "Write(*)",
+            "Bash(go build:*)",
+            "Bash(go run:*)",
+            "Bash(go test:*)",
+            "Bash(go mod tidy:*)",
+            "Bash(go mod download:*)",
+            "Bash(go fmt:*)",
+            "Bash(go vet:*)",
+            "Bash(npm install:*)",
+            "Bash(npm run:*)",
+            "Bash(npm test:*)",
+            "Bash(npx:*)",
+            "Bash(yarn:*)",
+            "Bash(pnpm:*)",
+            "Bash(make:*)",
+            "Bash(git status:*)",
+            "Bash(git diff:*)",
+            "Bash(git log:*)",
+            "Bash(git branch:*)",
+            "Bash(git show:*)",
+            "Bash(mix:*)",
+            "Bash(iex:*)",
+            "Bash(elixir:*)"
+        ]
+    },
     "theme": "dark",
     "ignorePatterns": [
         "**/.git/**",
