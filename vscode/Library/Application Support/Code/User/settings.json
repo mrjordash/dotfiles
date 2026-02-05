@@ -21,5 +21,8 @@
   "explorer.confirmDragAndDrop": false,
   "git.confirmSync": false,
   "claudeCode.preferredLocation": "panel",
-  "git.autofetch": true
+  "git.autofetch": true,
+  "github.copilot.enable": {
+    "*": false // Set to true if you want Copilot as backup
+  },
 }

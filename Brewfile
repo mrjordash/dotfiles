@@ -60,6 +60,7 @@ cask "brave-browser"
 # Knowledge & AI
 cask "obsidian"
 cask "claude"
+brew "ollama"
 
 # Productivity (Microsoft 365)
 cask "microsoft-office" # Installs Word, Excel, PowerPoint, Outlook, OneNote

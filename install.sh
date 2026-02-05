@@ -30,6 +30,7 @@ PACKAGES=(
     "bat"
     "fastfetch"
     "claude"
+    "continue"
     "mise"
 )
 

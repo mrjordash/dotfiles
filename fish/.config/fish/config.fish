@@ -57,6 +57,12 @@ abbr -a cc "cd ~/Code"
 abbr c "claude"
 abbr cy "claude --dangerously-skip-permissions"
 
+# Uses function cl.fish instead
+#abbr cl "mkdir -p ~/.claude_local; and env XDG_CONFIG_HOME=$HOME/.claude_local ANTHROPIC_BASE_URL=http://localhost:11434 ANTHROPIC_API_KEY=ollama claude --model qwen2.5-coder:14b"
+
+# Local LLM
+alias q="ollama run qwen2.5-coder:14b"
+
 # 1Password SSH Agent
 # This points SSH to the 1Password socket
 set -gx SSH_AUTH_SOCK "$HOME/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"

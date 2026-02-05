@@ -25,4 +25,21 @@
     "metrics": false,
   },
   "vim_mode": false,
+  "language_models": {
+    "ollama": {
+      "api_url": "http://localhost:11434",
+      "available_models": [
+        "qwen2.5-coder:14b",
+        "qwen2.5-coder:7b",
+        "deepseek-r1:14b"
+      ]
+    }
+  },
+  "assistant": {
+    "version": "2",
+    "default_model": {
+      "provider": "ollama",
+      "model": "qwen2.5-coder:14b"
+    }
+  }
 }
