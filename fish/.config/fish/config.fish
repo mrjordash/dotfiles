@@ -46,6 +46,7 @@ abbr -a gmt "go mod tidy"
 # Navigation
 abbr -a .. "cd .."
 abbr -a ... "cd ../.."
+abbr -a .... "cd ../../.."
 abbr -a ll "eza -l -g --icons" # Long list with icons
 abbr -a la "eza -la -g --icons" # List all (hidden)
 abbr -a cc "cd ~/Code"
