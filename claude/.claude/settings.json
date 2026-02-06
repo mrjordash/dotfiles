@@ -3,6 +3,10 @@
     "allow": [
       "Edit(*)",
       "Write(*)",
+      "WebFetch(*)",
+      "mcp__playwright__*",
+      "mcp__context7__*",
+      "mcp__sequential-thinking__*",
       "Bash(go build:*)",
       "Bash(go run:*)",
       "Bash(go test:*)",
