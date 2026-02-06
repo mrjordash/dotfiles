@@ -67,3 +67,13 @@ build/
 out/
 *.log
 .claude/
+
+# MCP
+.playwright-mcp
+playwright/.auth/
+auth.json
+sessions/
+test-results/
+playwright-report/
+blob-report/
+playwright-log.txt
