@@ -41,6 +41,7 @@ cask "discord"
 # Editor
 cask "zed"              # Rust-based Editor
 cask "visual-studio-code"
+cask "intellij-idea"
 
 # Utilities
 cask "rectangle"        # Window management
@@ -73,6 +74,8 @@ cask "font-jetbrains-mono-nerd-font" # Backup/Icons
 # --- Mac App Store (Optional) ---
 mas "Xcode", id: 497799835
 mas "1Password for Safari", id: 1569813296
+mas "Pages", id: 409201541
+mas "Keynote", id: 409183694
 
 # --- VS Code (Extensions) ---
 vscode "bradlc.vscode-tailwindcss"
