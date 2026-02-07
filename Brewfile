@@ -15,6 +15,7 @@ brew "dust"       # Better du (disk usage)
 brew "btop"       # System monitor
 brew "trash"      # Safe rm (moves to trash)
 brew "yq"         # jq for YAML
+brew "ffmpeg"     # AI can compressed videos, etc.
 
 # --- Shell & Terminal ---
 brew "fastfetch"
