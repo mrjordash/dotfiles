@@ -28,7 +28,12 @@
       "Bash(git show:*)",
       "Bash(mix:*)",
       "Bash(iex:*)",
-      "Bash(elixir:*)"
+      "Bash(elixir:*)",
+      "Bash(ffmpeg:*)",
+      "Bash(ffprobe:*)",
+      "Bash(figlet:*)",
+      "Bash(python:*)",
+      "Bash(python3:*)"
     ]
   },
   "theme": "dark",

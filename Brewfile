@@ -16,6 +16,7 @@ brew "btop"       # System monitor
 brew "trash"      # Safe rm (moves to trash)
 brew "yq"         # jq for YAML
 brew "ffmpeg"     # AI can compressed videos, etc.
+brew "figlet"     # For ASCII art
 
 # --- Shell & Terminal ---
 brew "fastfetch"
