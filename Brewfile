@@ -48,6 +48,7 @@ cask "intellij-idea"
 # Utilities
 cask "rectangle"        # Window management
 cask "shottr"           # Screenshots
+cask "caffeine"         # Keep Mac alive
 #cask "raycast"
 
 # Infrastructure
