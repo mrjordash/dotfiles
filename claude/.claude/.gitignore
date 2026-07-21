@@ -1,6 +1,6 @@
-# Ignore everything
+# User-level Claude runtime state is not portable dotfile content.
 *
 
-# Except the settings file
+# Keep only the reviewed user settings and this policy file.
 !settings.json
 !.gitignore
