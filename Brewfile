@@ -73,6 +73,10 @@ cask "microsoft-teams"
 # --- Fonts ---
 cask "font-monaspace"   # Texture Healing (Neon, Argon, etc.)
 cask "font-jetbrains-mono-nerd-font" # Backup/Icons
+cask "font-inter"       # JetBrains Sans alternative — most neutral
+cask "font-geist"       # JetBrains Sans alternative — closest in spirit (Vercel)
+cask "font-ibm-plex-sans" # JetBrains Sans alternative — humanist tech feel
+cask "font-manrope"     # JetBrains Sans alternative — geometric, slightly warmer
 
 # --- Mac App Store (Optional) ---
 mas "Xcode", id: 497799835

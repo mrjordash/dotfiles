@@ -25,4 +25,6 @@
   "github.copilot.enable": {
     "*": false // Set to true if you want Copilot as backup
   },
+  "explorer.confirmDelete": false,
+  "workbench.startupEditor": "none",
 }

@@ -66,7 +66,23 @@ dist/
 build/
 out/
 *.log
-.claude/
+.claude/*
+
+# AI context
+_context/
+.context/
+_agents-context/
+.agents-context/
+_agent-context/
+.agent-context/
+
+# Claude Code plan session state (not plans themselves)
+.claude/.plan-active
+.claude/.plan-approved
+
+# Keep plan files tracked
+!.claude/plans/
+!.claude/plans/**
 
 # MCP
 .playwright-mcp
