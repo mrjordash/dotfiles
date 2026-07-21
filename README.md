@@ -17,13 +17,20 @@ Managed via `stow`, `homebrew`, and `mise`.
 ### 1. Clone this repo
 
 ```bash
-git clone https://github.com/jordanrioux/dotfiles.git ~/dotfiles
+git clone https://github.com/mrjordash/dotfiles.git ~/dotfiles
 ```
 
 ### 2. Install apps and tools
 
 ```bash
 brew bundle --file ~/dotfiles/Brewfile
+```
+
+Clone the private development-agent kit beside this repository:
+
+```bash
+gh auth login
+gh repo clone mrjordash/dev-agent-kit ~/dev-agent-kit
 ```
 
 ### 3. Run the installer
@@ -67,6 +74,8 @@ Some things require human intervention or cannot be scripted.
 
 - **Go:** Install language server and linter - see [Go Setup](docs/go-setup.md)
 - **Claude Code:** Login with `claude login`
+- **Development agents:** `dev-agent-kit` owns Codex and Claude agents, skills, and generated global guidance. Dotfiles owns only the reviewed platform settings. Keep the kit at `~/dev-agent-kit`, or set `AGENT_KIT_DIR` before running `install.sh`.
+- **Configuration fragments:** Review `~/.codex/agent-kit/config.fragment.toml` and `~/.claude/agent-kit/settings.fragment.json` before merging future platform defaults. The installer never overwrites primary settings automatically.
 
 ### Fish Shell
 
